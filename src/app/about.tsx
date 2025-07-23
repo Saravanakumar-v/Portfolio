@@ -5,8 +5,6 @@ import { useToggle } from './toggleContext';
 
 export default function About() {
 
-  const {toggle} = useToggle();
-  
   return (
     <>
     <div className='about flex flex-col gap-[15px]'>
