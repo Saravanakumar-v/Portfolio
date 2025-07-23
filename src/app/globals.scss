@@ -1,0 +1,222 @@
+.experience {
+    &:has(.edu) {
+        .toggle {
+            background: black;
+            .toggle-bg {
+                background: white;
+            }
+            .btn-primary {
+                color: black;
+            }
+            .btn-secondary {
+                color: white;
+            }
+        }
+    }
+
+    .toggle {
+        border-radius: 5px;
+        background: white;
+        padding: 5px;
+        position: relative;
+        width: 70%;
+
+        .toggle-bg {
+            background: black;
+            position: absolute;
+            width: 50%;
+            height: 90%;
+            border-radius: 5px;
+            content: '';
+        }
+        .btn-primary,.btn-secondary {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            color: black;
+            border-radius: 5px;
+            cursor: pointer;
+            z-index: 1;
+            padding: 3px;
+
+            svg {
+                width: 18px;
+                height: 18px;
+            }
+        }
+        .btn-primary {
+            color: white;
+            z-index: 1;
+        }
+    }
+    .experience-content {
+        overflow: hidden;
+        width: 100%;
+
+        .exp-content,.edu-content {
+            min-width: 100%;
+            box-sizing: border-box;
+            position: relative;
+
+            img {
+                background: black;
+                position: relative;
+                padding: 15px 0px;
+                padding-top: 0px;
+            }
+
+            .line {
+                width: 1px;
+                height: 40%;
+                border-right: 2px solid white;
+                position: absolute;
+                left: 30px;
+                top: 20px;
+            }
+
+            .content {
+                padding: 10px;
+                border-radius: 5px;
+            }
+            .content-edu {
+                padding: 10px;
+                border-radius: 5px;
+                height: 100px;
+            }
+        }
+        .edu-content  {
+            img {
+                background: #FFF;
+            }
+            .line {
+                border-color: black;
+            }
+        }
+    }
+}
+
+.navbar-cont {
+    .profile-dp {
+        object-fit: cover;
+        border-radius: 50%;
+        width: 140px;
+        height: 140px;
+        margin-bottom: 5px;
+        border: 2px solid white;
+        padding: 5px;
+    }
+    .usr-name {
+        max-width: 185px;
+        text-wrap: nowrap;
+        overflow: hidden;
+        position: relative;
+
+        .icons {
+            transform: translateX(-35px);
+            transition: all 0.5s ease;
+            opacity: 0;
+        }
+
+        &:hover {
+            max-width: fit-content;
+
+            .icons {
+                transform: translateX(0);
+                transition: all 0.5s ease;
+                opacity: 1;
+            }
+        }
+    }
+
+    .contact-info {
+        font-size: 14px;
+        .contact-resume {
+            border-radius: 5px;
+            padding: 5px;
+            border: 1px solid #FFF;
+            font-weight: bold;
+            svg {
+                width: 20px;
+                height: 20px;
+                opacity: 1;
+            }
+        }
+        svg {
+            width: 30px;
+            height: 30px;
+            opacity: 0.5;
+            transition: all 0.3s ease-in-out;
+        }
+        svg:hover {
+            opacity: 1;
+            transition: all 0.3s ease-in-out;
+        }
+    }
+}
+
+.tech-stack {
+    .stack {
+        border-radius: 5px;
+        font-size: 14px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    .stack:hover {
+        transform: scale(1.05);
+        transition: all 0.3s ease;
+    }
+}
+
+.nav-links {
+    border:  1px solid white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+body {
+    position: relative;
+
+    &::before {
+        content: '';
+        background: white;
+        width: 100%;
+        height: 100vh;
+        min-height: 100%;
+        top: 0;
+        right: 100%;
+        z-index: -1;
+        position: absolute;
+        transition: all ease 0.5s;
+    }
+
+    &:has(.edu) {
+        color: #000;
+
+        &::before {
+            right: 0;
+            transition: all ease 0.5s;
+        }
+
+        .usr-name {
+            transition: all ease 0.5s;
+        }
+
+        .profile-dp {
+            border-color: black;
+        }
+    }
+}
+
+
+.main-page {
+    &:has(.edu) {
+        .portfolio-cont {
+            gap: 0px;
+            .profile-cont {
+                background: white;
+            }
+        }
+    }
+}
