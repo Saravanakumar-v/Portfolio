@@ -37,7 +37,7 @@ export default function RootLayout({
       >
         <ToggleProvider>
         <div className="w-[80%] m-auto flex justify-center items-center"> 
-          <Homepage />
+          {children}
         </div>
         </ToggleProvider>
       </body>
