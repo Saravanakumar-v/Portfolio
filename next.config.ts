@@ -7,6 +7,10 @@ const nextConfig: NextConfig = {
     ignoreDuringBuilds: true,
   },
   output: "export", 
+  rules: {
+    'no-console': 'off',
+    // add other rules to disable here
+  }
 };
 
 export default nextConfig;
