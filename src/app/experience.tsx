@@ -18,7 +18,7 @@ export default function Content() {
   return (
     <div className='container-fluid experience flex flex-col gap-[20px]'>
         <div className={'toggle flex items-center '+toggle}>
-            <div className='toggle-bg' style={{transition: 'all ease .5s',left: toggle == 'exp' ?'2px' :'49.5%'}}></div>
+            <div className='  toggle-bg' style={{transition: 'all ease .5s',left: toggle == 'exp' ?'2px' :'49.5%'}}></div>
             <div className={toggle == 'exp' ?'btn-primary exp' :'btn-secondary'} onClick={() => setToggle('exp')}><BusinessRoundedIcon />Experience</div>
             <div className={toggle == 'edu' ?'btn-primary edu' :'btn-secondary'} onClick={() => setToggle('edu')}><SchoolRoundedIcon />Education</div>
         </div>

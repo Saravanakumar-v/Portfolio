@@ -1,7 +1,9 @@
 .experience {
     &:has(.edu) {
+        transition: background ease 2s;
         .toggle {
             background: black;
+            transition: all ease 2s;
             .toggle-bg {
                 background: white;
             }
@@ -212,11 +214,13 @@ body {
 
 .main-page {
     &:has(.edu) {
+        .tech-stack,.about {
+            opacity: 0;
+        }
+
+
         .portfolio-cont {
             gap: 0px;
-            .profile-cont {
-                background: white;
-            }
         }
     }
 }
