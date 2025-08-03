@@ -220,3 +220,11 @@ body {
         }
     }
 }
+
+@media only screen and (max-width: '1028px') {
+   .main-page {
+    .home-page {
+        flex-direction: column;
+    }
+   }
+}

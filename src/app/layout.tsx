@@ -2,7 +2,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Holtwood_One_SC } from "next/font/google";
 import "./globals.css";
-import Homepage from "./homepage";
 import './globals.scss';
 import { ToggleProvider } from "./toggleContext";
 
