@@ -35,7 +35,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} lato-regular antialiased m-auto p-10 pt-20 container-fluid layout m-auto`}
       >
         <ToggleProvider>
-        <div className="w-[80%] m-auto flex justify-center items-center"> 
+        <div className="layout w-[80%] m-auto flex justify-center items-center"> 
           {children}
         </div>
         </ToggleProvider>

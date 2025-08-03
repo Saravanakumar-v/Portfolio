@@ -222,9 +222,31 @@ body {
 }
 
 @media only screen and (max-width: '1028px') {
+    .main-page {
+        .home-page {
+            flex-direction: column;
+        }
+    }
+}
+
+@media only screen and (max-width: '425px') {
+    .layout {
+        width: 100%;
+        padding-top: 25px;
+    }
    .main-page {
     .home-page {
         flex-direction: column;
+        align-items: center;
+        width: 280px;
+
+        .nav-bar {
+            width: 280px;
+
+            .usr-name {
+                font-size: 20px;
+            }
+        }
     }
    }
 }
