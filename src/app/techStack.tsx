@@ -8,8 +8,8 @@ export default function TechStack() {
   const techStack = [
     { key: 'Reactjs', dispName: 'React.js' },
     { key: 'Typescript', dispName: 'TypeScript' },
-    { key: 'Tailwind', dispName: 'Tailwind CSS' },
     { key: 'SCSS', dispName: 'SCSS' },
+    { key: 'Tailwind', dispName: 'Tailwind CSS' },
     { key: 'Graphql', dispName: 'GraphQL' },
     { key: 'Chartjs', dispName: 'Chart.js' },
     { key: 'MUI', dispName: 'Material UI' },
