@@ -61,7 +61,7 @@ export default function Navbar() {
         <div className='text-[16px]'>📍 Thiruvallur, Chennai</div>
         <div className='flex items-center gap-[10px] text-[16px] cursor-pointer contact-info'  style={{transition: 'width 0.5s'}}> 
           {toggle == 'exp' &&
-            <a className='flex items-center gap-[5px] contact-resume' href='/SaravanaKumar_Resume.pdf' download={'SaravanaKumar_Resume'} ><DownloadRoundedIcon />Resume</a>
+            <a className='flex items-center gap-[5px] contact-resume' href='/Saravanakumar_resume.pdf' download={'Saravanakumar_resume'} ><DownloadRoundedIcon />Resume</a>
           }
           <div className='cursor-pointer' onClick={() => handleNavigation('linkedin')}><LinkedInIcon /></div>
           <div className='cursor-pointer' onClick={() => handleNavigation('github')}><GitHubIcon className='github'/></div>
