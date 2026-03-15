@@ -32,7 +32,7 @@ export default function RootLayout({
       <title>Saravana Kumar | Portfolio</title>
       <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet"></link>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} lato-regular antialiased m-auto p-10 pt-20 container-fluid layout m-auto`}
+        className={`${geistSans.variable} ${geistMono.variable} lato-regular antialiased m-auto p-10  container-fluid layout m-auto`}
       >
         <ToggleProvider>
         <div className="layout w-[80%] m-auto flex justify-center items-center"> 

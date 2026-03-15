@@ -25,27 +25,35 @@ export default function Content() {
 
         <div className='experience-content w-[100%] flex items-start justify-between gap-[20px]'>
             <div className='exp-content text-[16px] w-[100%] flex flex-col gap-[20px]' id='exp-content'>
-              <div className='line'></div>
+              <div className='line h-[66%]'></div>
               <div className='content flex items-start gap-[20px] min-w-[100%]'>
               <img src='https://cdn.samco.in/images/favicon/favicon.ico' alt='' style={{width: '40px'}}></img>
               <div className='flex flex-col gap-[20px] w-[100%]'>
                 <div className='flex items-start justify-between'>
                   <div>
                     <div>
-                      <div className='font-bold'>SAMCO Securities Limited - Trading Platform</div>
-                      <div className='italic'>Web Developer</div>
+                      <div className='font-bold'>Samco Securities Limited - Trading Platform</div>
+                      <div className='italic'>Software Engineer - Web Development</div>
                     </div>
                   </div>
                   <div className='text-[14px]'>Jul 2023 - Current</div>
                 </div>
-                {/* <div>
-                  <li>Involved in redesigning the web application from Angular 10 to React 19.</li>
-                </div> */}
+                <div className='text-[15px]'>
+                  Samco 3.0 Trading Web Application			
+                </div>
+                <div className='flex flex-col gap-[5px] ml-[10px]'>
+                <li className='text-[14px]'>
+                  Developed and maintained a fully responsive trading platform for Samco Trading web application using React.js, delivering multiple feature-rich versions with seamless cross-device and cross-browser compatibility.
+                </li>
+                <li className='text-[14px]'>
+                  Integrated real-time market data updates using GraphQL and Apollo Client, optimizing data fetching efficiency, reducing API overhead, and ensuring smooth UI performance during peak trading hours.
+                </li>
+                </div>
               </div>
               </div>
 
               <div className='content flex items-start gap-[20px] min-w-[100%]'>
-                <img src='https://cdn.samco.in/images/favicon/favicon.ico' alt='' style={{ width: '40px' }}></img>
+                <img src='https://cdn.samco.in/images/favicon/favicon.ico' alt='' style={{ width: '40px'}}></img>
                 <div className='flex flex-col gap-[20px] w-[100%]'>
                   <div className='flex items-start justify-between'>
                     <div>
@@ -56,15 +64,12 @@ export default function Content() {
                     </div>
                     <div className='text-[14px]'>Feb 2023 - Apr 2023</div>
                   </div>
-                  {/* <div>
-                    <b>Project</b>: Market Symbol Event Calendar
-                  </div> */}
                 </div>
               </div>
               </div>
 
             <div className='edu-content text-[16px] w-[100%] flex flex-col gap-[20px]' id='edu-content'>
-              <div className='line'></div>
+              <div className='line h-[40%]'></div>
                <div className='content flex items-start gap-[20px] min-w-[100%]'>
                 <img src='https://www.svce.ac.in/wp-content/uploads/2020/03/svce_logo.jpg' alt='' style={{ width: '40px' }}></img>
                 <div className='flex flex-col gap-[20px] w-[100%]'>

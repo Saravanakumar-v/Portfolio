@@ -17,7 +17,13 @@ export default function Homepage() {
   const {toggle} = useToggle();
 
   return (
+    
       <div className='main-page flex flex-col gap-[20px] items-center w-[100%]' style={{transition: 'all ease 0.5s',overflow: 'hidden'}}>
+        {/* {toggle == 'exp' &&
+        <>
+          <Projects />
+        </>
+        } */}
         <div className='home-page flex items-start justify-between w-[100%]'>
           <div className='w-[450px] nav-bar'>
             <Navbar />
@@ -33,11 +39,6 @@ export default function Homepage() {
             </div>
           </div>
         </div>
-        {toggle == 'exp' &&
-        <>
-          <Projects />
-        </>
-        }
       </div>
   )
 }
