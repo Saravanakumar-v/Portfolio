@@ -11,7 +11,7 @@ const nextConfig: NextConfig = {
     unoptimized: true, // Required if using next/image with static export
   },
   rules: {
-    'no-console': 'off',
+    // 'no-console': 'off',
     // add other rules to disable here
   }
 };
